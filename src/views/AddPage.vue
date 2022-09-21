@@ -48,19 +48,30 @@ export default {
   }),
   methods: {
     async add() {
-      let result = await axios.post("http://localhost:3000/restaurant", {
-        name: this.restaurant.name,
-        contact: this.restaurant.contact,
-        address: this.restaurant.address,
-      });
+      if (this.restaurant.name === "") {
+        return alert("Require name");
+      } else if (this.restaurant.contact === "") {
+        return alert("Require contact");
+      } else if (this.restaurant.address === "") {
+        return alert("Require address");
+      } else {
+        let result = await axios.post("http://localhost:3000/restaurant", {
+          name: this.restaurant.name,
+          contact: this.restaurant.contact,
+          address: this.restaurant.address,
+        });
 
-      if (result.status === 201) {
-        this.$router.push({ name: "Home" });
+        if (result.status === 201) {
+          this.$router.push({ name: "Home" });
+        }
       }
     },
   },
   mounted() {
     let user = localStorage.getItem("user-info");
+    if (!user) {
+      this.$router.push({ name: "SignUp" });
+    }
     let usernames = JSON.parse(user);
     if (Array.isArray(usernames)) {
       usernames.forEach((username) => {
@@ -68,9 +79,6 @@ export default {
       });
     } else {
       this.name = usernames.name;
-    }
-    if (!user) {
-      this.$router.push({ name: "SignUp" });
     }
   },
 };

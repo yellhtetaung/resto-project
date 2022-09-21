@@ -11,38 +11,14 @@
       "email": "yellhtet@test.com",
       "password": "yellhtet@123",
       "id": 2
-    },
-    {
-      "name": "users",
-      "email": "users@test.com",
-      "password": "users@123",
-      "id": 3
-    },
-    {
-      "name": "clone",
-      "email": "clone@test.com",
-      "password": "clone@123",
-      "id": 4
-    },
-    {
-      "name": "phyowaiaung",
-      "email": "phyo@test.com",
-      "password": "phyo@123",
-      "id": 5
     }
   ],
   "restaurant": [
     {
-      "name": "TM Coffe Bar",
-      "contact": "12345",
+      "name": "TM Coffee Shop",
+      "contact": "111111",
       "address": "Bago, Myanmar",
       "id": 1
-    },
-    {
-      "name": "The Rich Bar",
-      "contact": "11111111",
-      "address": "Bago, Myanmar",
-      "id": 2
     }
   ]
 }

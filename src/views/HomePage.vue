@@ -61,8 +61,8 @@ export default {
       }
     },
     async loadData() {
-      let users = localStorage.getItem("user-info");
-      let usernames = JSON.parse(users);
+      let user = localStorage.getItem("user-info");
+      let usernames = JSON.parse(user);
       if (Array.isArray(usernames)) {
         usernames.forEach((username) => {
           this.name = username.name;
