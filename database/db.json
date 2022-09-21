@@ -1,0 +1,30 @@
+{
+  "user": [
+    {
+      "name": "zen",
+      "email": "zen@test.com",
+      "password": "zen@123",
+      "id": 1
+    },
+    {
+      "name": "yellhtetaung",
+      "email": "yellhtet@test.com",
+      "password": "yellhtet@123",
+      "id": 2
+    }
+  ],
+  "restaurant": [
+    {
+      "name": "TM Coffe Bar",
+      "contact": "12345",
+      "address": "Bago, Myanmar",
+      "id": 1
+    },
+    {
+      "name": "The Rich Bar",
+      "contact": "11111111",
+      "address": "Bago, Myanmar",
+      "id": 2
+    }
+  ]
+}
