@@ -9,16 +9,28 @@
     {
       "name": "yellhtetaung",
       "email": "yellhtet@test.com",
-      "password": "yellhtet@123",
+      "password": "yellhtet@2488",
       "id": 2
+    },
+    {
+      "name": "user",
+      "email": "user@test.com",
+      "password": "user@123",
+      "id": 3
     }
   ],
   "restaurant": [
     {
       "name": "TM Coffee Shop",
-      "contact": "111111",
+      "contact": "333333",
       "address": "Bago, Myanmar",
       "id": 1
+    },
+    {
+      "name": "The Rich Bar",
+      "contact": "111111",
+      "address": "Bago, Myanmar",
+      "id": 2
     }
   ]
 }
