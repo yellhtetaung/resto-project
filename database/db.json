@@ -11,6 +11,24 @@
       "email": "yellhtet@test.com",
       "password": "yellhtet@123",
       "id": 2
+    },
+    {
+      "name": "users",
+      "email": "users@test.com",
+      "password": "users@123",
+      "id": 3
+    },
+    {
+      "name": "clone",
+      "email": "clone@test.com",
+      "password": "clone@123",
+      "id": 4
+    },
+    {
+      "name": "phyowaiaung",
+      "email": "phyo@test.com",
+      "password": "phyo@123",
+      "id": 5
     }
   ],
   "restaurant": [

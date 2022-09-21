@@ -61,8 +61,8 @@ export default {
       }
     },
     async loadData() {
-      let user = localStorage.getItem("user-info");
-      let usernames = JSON.parse(user);
+      let users = localStorage.getItem("user-info");
+      let usernames = JSON.parse(users);
       if (Array.isArray(usernames)) {
         usernames.forEach((username) => {
           this.name = username.name;
@@ -70,15 +70,16 @@ export default {
       } else {
         this.name = usernames.name;
       }
-      if (!user) {
-        this.$router.push({ name: "SignUp" });
-      }
 
       let resut = await axios.get("http://localhost:3000/restaurant");
       this.restaurant = resut.data;
     },
   },
   mounted() {
+    const user = localStorage.getItem("user-info");
+    if (!user) {
+      this.$router.push({ name: "SignUp" });
+    }
     this.loadData();
   },
 };
